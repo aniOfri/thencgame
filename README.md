@@ -1,2 +1,2 @@
-# thensgame
-Which israeli settlements is nearest?
+# thencgame
+Which country is nearest?
