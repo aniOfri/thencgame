@@ -6,8 +6,11 @@ import Menu from './components/menu';
 import Game from './components/game';
 import Cloud from './components/cloud';
 
+// Data
+import backgroundImage from './data/worldmap.png';
+
 // Modules
-import { useContext, useEffect, useState } from 'react'
+import { useContext, useEffect, useState } from 'react';
 import { checkCookies, createCookies } from './modules/Cookies';
 import { SocketContext } from './modules/socket';
 
@@ -150,8 +153,7 @@ function App() {
 
   return (
     <div className="App">
-        <Cloud className="cloud" big={true} size={width < height ? width/1000 : height/1000} x_offset={width < height ? -width/10 : 2*width/3} y_offset="0"/>
-        <Cloud className="cloud" size={width < height ? width/2000 : height/2000} x_offset={width < height ? -width/5 : width/9} y_offset={height/4}/>
+        <img className="backgroundImg" src={backgroundImage}/>
         <div className="text">
           {jsx}
         </div>

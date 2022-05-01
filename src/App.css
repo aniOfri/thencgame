@@ -3,7 +3,7 @@ body {
 }
 .App {
   cursor: default;
-  background-image: url("./data/background.png");
+  background: linear-gradient(90deg, hsla(205, 45%, 37%, 1) 0%, hsla(212, 27%, 51%, 1) 100%);
   background-size:cover;
   background-position-x:center;
   min-height: 100vh;
@@ -12,6 +12,18 @@ body {
   flex-direction: column;
   font-size: calc(5px + 2vmin);
   color: rgb(234, 238, 255);  
+  z-index: -2;
+}
+
+.backgroundImg{
+  box-shadow: 5px 5px #BECDDD;
+  position: absolute;
+  top: 0;
+  right:0;
+  object-fit: cover;
+  width: auto;
+  height:100%;
+  z-index:0;
 }
 
 div.text{
