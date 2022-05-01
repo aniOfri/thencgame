@@ -160,7 +160,7 @@
         "population": "10347892"
     },
     {
-        "countryLabel": "People's Republic of China",
+        "countryLabel": "China",
         "gps": "Point(103.451944444 35.844722222)",
         "population": "1443497378"
     },
@@ -300,11 +300,6 @@
         "population": "25490965"
     },
     {
-        "countryLabel": "Trinidad and Tobago",
-        "gps": "Point(-61.516666666 10.666666666)",
-        "population": "1369125"
-    },
-    {
         "countryLabel": "Greece",
         "gps": "Point(23.0 38.5)",
         "population": "10760421"
@@ -323,11 +318,6 @@
         "countryLabel": "Haiti",
         "gps": "Point(-72.8 19.0)",
         "population": "10981229"
-    },
-    {
-        "countryLabel": "Dominican Republic",
-        "gps": "Point(-70.2 18.8)",
-        "population": "10403761"
     },
     {
         "countryLabel": "Croatia",
@@ -403,11 +393,6 @@
         "countryLabel": "Kosovo",
         "gps": "Point(20.833333333 42.55)",
         "population": "1883018"
-    },
-    {
-        "countryLabel": "Kingdom of Denmark",
-        "gps": "Point(-6.844444444 61.97)",
-        "population": "5930987"
     },
     {
         "countryLabel": "Namibia",
@@ -500,11 +485,6 @@
         "population": "211400708"
     },
     {
-        "countryLabel": "Kingdom of Denmark",
-        "gps": "Point(10.0 56.0)",
-        "population": "5930987"
-    },
-    {
         "countryLabel": "Saudi Arabia",
         "gps": "Point(44.116667 23.716667)",
         "population": "33000000"
@@ -520,7 +500,7 @@
         "population": "6100075"
     },
     {
-        "countryLabel": "The Gambia",
+        "countryLabel": "Gambia",
         "gps": "Point(-15.5 13.5)",
         "population": "2100568"
     },
@@ -613,16 +593,6 @@
         "countryLabel": "Uganda",
         "gps": "Point(32.39 1.28)",
         "population": "42862958"
-    },
-    {
-        "countryLabel": "Somaliland",
-        "gps": "Point(46.2 9.8)",
-        "population": "5780000"
-    },
-    {
-        "countryLabel": "Democratic Republic of the Congo",
-        "gps": "Point(23.656 -2.88)",
-        "population": "86790567"
     },
     {
         "countryLabel": "Libya",

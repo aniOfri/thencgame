@@ -141,7 +141,7 @@ function Game(props) {
                 keyword = "West"
         }
 
-        return "Located approximately " + Math.round(calcCrow(lat1, longt1, lat2, longt2)) + " KM " + keyword + " from " + dest.countryLabel;
+        return "Located approximately " + Math.round(calcCrow(lat1, longt1, lat2, longt2)) + " KM " + keyword + " from ";
     }
 
     function updateLastSettlements(lastPlay) {
@@ -216,7 +216,7 @@ function Game(props) {
             indicatorSentence = settlements[0][choice].countryLabel+" is the "+ answer;
         else
             indicatorSentence = "Timeout.";
-        let moreInfo = props.showInfo ? (<div><h1 className={information}>{settlements[0][0].countryLabel} <br></br>{sentence}</h1><br></br> <div className="h1button"><h1>Continue</h1></div></div>) : (<div className="h1button"><h1>Continue</h1></div>)
+        let moreInfo = props.showInfo ? (<div><h1 className={information}>{settlements[0][0].countryLabel} <br></br>{sentence} <br></br>{settlements[0][settlements[1]].countryLabel}</h1><br></br> <div className="h1button"><h1>Continue</h1></div></div>) : (<div className="h1button"><h1>Continue</h1></div>)
         jsx = (
             <div onClick={() => { nextRound() }}>
                 <p className="streak">{highscore} <br></br>  Score:  {streak}</p>

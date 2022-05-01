@@ -35,11 +35,11 @@ function Settings(props) {
     return (
         <div>
             <img src={closeLogo} className="closeImage" onClick={() => { props.setSettings(!props.settings) }}></img>
-            <h1>הגדרות</h1>
+            <h1>Settings</h1>
             <div className="setting">
                 <div>
-                    <p className="settingTitle">אוכלוסיה מינימלית</p>
-                    <p className="smallText">קביעת האוכלוסיה המינימלית של כל עיר במשחק</p>
+                    <p className="settingTitle">Minimum Population</p>
+                    <p className="smallText">Set the minimum population for each country in the game</p>
                 </div>
                 <div style={{width: "40%"}} >
                     <Slider className="controller" value={props.minPop} min={0} max={50000} step={1000} valueLabelDisplay="auto" onChange={handleMinPop} />
@@ -47,23 +47,22 @@ function Settings(props) {
             </div>
             <div className="setting">
                 <div>
-                    <p className="settingTitle">טיימר</p>
-                    <p className="smallText">שחק את המשחק על זמן ובדוק כמה אתה מהיר</p>
-                    <p className="smallText">(בשימוש בטיימר הניקוד לא ישמר וכל ניקוד שמור יתאפס)</p>
+                    <p className="settingTitle">Timer</p>
+                    <p className="smallText">Play the game with a limit of 10 seconds for each level</p>
                 </div>
                 <Switch className="controller" onColor="#86d3ff" onHandleColor="#2693e6" uncheckedIcon={false} checkedIcon={false} checked={props.timerEnabled} onChange={handleTimer} />
             </div>
             <div className="setting">
                 <div>
-                    <p className="settingTitle">מידע בדף ביניים</p>
-                    <p className="smallText">הצג מידע נוסף על העיר בדף הביניים</p>
+                    <p className="settingTitle">Information</p>
+                    <p className="smallText">Show information between each level</p>
                 </div>
                 <Switch className="controller" onColor="#86d3ff" onHandleColor="#2693e6" uncheckedIcon={false} checkedIcon={false} checked={props.showInfo} onChange={handleInfo} />
             </div>
             <div className="setting">
                 <div>
-                    <p className="settingTitle">פסילות</p>
-                    <p className="smallText">קבל 3 פסילות</p>
+                    <p className="settingTitle">Fails</p>
+                    <p className="smallText">Get 3 Fails</p>
                 </div>
                 <Switch className="controller" onColor="#86d3ff" onHandleColor="#2693e6" uncheckedIcon={false} checkedIcon={false} checked={props.isHealth} onChange={handleHealth} />
             </div>
@@ -86,17 +85,17 @@ function Menu(props) {
         return <Settings isHealth={props.isHealth} setIsHealth={props.setIsHealth} setShowInfo={props.setShowInfo} showInfo={props.showInfo} setMinPop={props.setMinPop} minPop={props.minPop} setTimerEnabled={props.setTimerEnabled} timerEnabled={props.timerEnabled} setSettings={setSettings} settings={settings} />
     }
     else {
-        let mode = "משחק לבד";
+        let mode = "Singleplayer";
         if (props.cookies["streak"] > 0)
-            mode = "המשך משחק לבד (ניקוד: " + props.cookies["streak"] + ")";
+            mode = "Continue Singleplayer (" + props.cookies["streak"] + ")";
 
         if (!props.isMultiplayer){
             return (
                 <div>
                     <img src={settingsLogo} className="settingsImage" onClick={() => { setSettings(!settings) }}></img>
-                    <h1 className="menuTitle">איזו עיר יותר קרובה?</h1><br></br>
+                    <h1 className="menuTitle">Which Country is Nearest?</h1><br></br>
                     <div className="h1button" ><h1  onClick={() => { props.startGame() }}> {mode}</h1></div><br></br>
-                    <div className="h1button nohover" ><h1 className="smallText"> משחק רב משתתפים (בקרוב..) </h1></div>{/*onClick={() => { props.startMultiplayer() }}*/}
+                    <div className="h1button nohover" ><h1 className="smallText"> Multiplayer (Coming soon) </h1></div>{/*onClick={() => { props.startMultiplayer() }}*/}
                 </div>
             );
         }
@@ -105,12 +104,12 @@ function Menu(props) {
             return (
                 <div>
                     <img src={closeLogo} className="closeImage" onClick={() => { props.setIsMultiplayer(false) }}></img>
-                    <h1 className="menuTitle ">משחק רב משתתפים</h1><br></br>
-                    שם:<br></br>
+                    <h1 className="menuTitle ">Multiplayer</h1><br></br>
+                    Username:<br></br>
                     <input type="text" onChange={(event) => { props.setUsername(event.target.value) }}></input><br></br>
-                    חדר:<br></br>
+                    Room:<br></br>
                     <input type="text" onChange={(event) => { props.setRoom(event.target.value) }}></input><br></br>
-                    <Button className="startButton" variant="outlined" onClick={() => { props.joinRoom() }}> התחבר </Button>
+                    <Button className="startButton" variant="outlined" onClick={() => { props.joinRoom() }}> Join </Button>
                 </div>
                 );
             }
@@ -121,7 +120,7 @@ function Menu(props) {
             
             return (
                 <div>
-                    <h1 className="menuTitle ">חדר המתנה</h1><br></br>
+                    <h1 className="menuTitle ">Waiting Room</h1><br></br>
                     {list}<br></br>
                     {props.users}/2<br></br>
                 </div>
