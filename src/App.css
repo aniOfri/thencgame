@@ -1,0 +1,303 @@
+body {
+  overflow: clip;
+}
+.App {
+  cursor: default;
+  background-image: url("./data/background.png");
+  background-size:cover;
+  background-position-x:center;
+  min-height: 100vh;
+  display: flex;
+  height: auto;
+  flex-direction: column;
+  font-size: calc(5px + 2vmin);
+  color: rgb(234, 238, 255);  
+}
+
+div.text{
+  z-index:2;
+  text-align: center;
+}
+
+.timer{
+  text-shadow:
+  -1px -1px 0 #000,  
+   1px -1px 0 #000,
+   -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+.title {
+  font-size: 8vmin;
+  margin-top: 5vmax;
+  margin-bottom: 0;
+  text-shadow:
+  -1px -1px 0 #000,  
+   1px -1px 0 #000,
+   -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+.streak {
+  font-size: 5vmin;
+  margin-top: 0.2%;
+  margin-bottom: 2%;
+  text-shadow:
+  -1px -1px 0 #000,  
+   1px -1px 0 #000,
+   -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+.titleCountry{
+  text-shadow:
+  -1px -1px 0 #000,  
+   1px -1px 0 #000,
+   -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+
+.fail {
+  color: #ff493c;
+  font-size: 3vmax;
+  font-weight: bold;
+  text-shadow:
+  -1px -1px 0 #000,  
+   1px -1px 0 #000,
+   -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+
+.success {
+  color: #5ee638;
+  font-size: 3vmax;
+  font-weight: bold;
+  text-shadow:
+  -1px -1px 0 #000,  
+   1px -1px 0 #000,
+   -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+.indicatorMobile {
+  margin-top: 80%;
+}
+
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  height: 150px;
+}
+
+.wrapperPause {
+  text-align:center;
+  margin-top: 10%;
+  margin-bottom: auto;
+  justify-content: center;
+  height: 150px;
+}
+
+.horz {
+  flex-direction: row;
+  font-size: 1.2vmax;
+}
+
+.mobile {
+  display: block;
+  font-size: 1.3vmax;
+}
+
+.mobile h1 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+h1 {
+  width: fit-content;
+  display: inline-block;
+}
+
+.center {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.center h1 {
+  cursor: pointer;
+  transition: transform .2s;
+}
+
+.left {
+  position: absolute;
+  left: 0;
+  width: 33%;
+  z-index: 1;
+}
+
+.h1button h1{
+  background-color: #31da5b;
+  box-shadow: 5px 5px #40aa5a;
+  color: rgb(234, 238, 255); 
+  border-radius: 25px;
+  padding: 5px 15px 12px 15px;
+  cursor: pointer;
+  transition: transform .2s;
+}
+
+.h1button h1:hover{
+  box-shadow: none;
+  transform: scale(1.2);
+}
+
+.nohover h1{
+  box-shadow:none;
+  background-color: #3D434F;
+  color:darkgrey
+}
+
+.nohover h1:hover{
+  transform: scale(1);
+}
+
+.right {
+  position: absolute;
+  right: 0;
+  width: 33%;
+  z-index: 1;
+}
+
+.middle {
+  position: absolute;
+  width: 33%;
+  z-index: 1;
+}
+
+.top {
+  justify-content: center;
+}
+
+.middleVert {
+  justify-content: center;
+}
+.bottom {
+  justify-content: center;
+}
+
+.infoMobile {
+  margin-top: 10%;
+  padding: 5px 5px 5px 5px;
+  text-shadow:
+  -1px -1px 0 #000,  
+   1px -1px 0 #000,
+   -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+.settingsImage {
+  position: absolute;
+  height: 25px;
+  right: 0;
+  padding: 17px 17px 17px 17px;
+}
+
+.closeImage {
+  position: absolute;
+  height: 25px;
+  left: 0;
+  padding: 17px 17px 17px 17px;
+}
+
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  padding: 2px 15px;
+  font-size: 10px;
+  left: 0;
+}
+
+.footer p {
+  text-align: left;
+}
+
+.settingsDiv {
+  padding: 5px 25px 25px 25px;
+  background-color: #3D434F;
+  height: 100%;
+}
+
+.smallText {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 12px;
+}
+
+.menuTitle {
+  font-size: 5vmax;
+  margin-top: 15vmax;
+  margin-bottom: 5vmax;
+  text-shadow:
+  -1px -1px 0 #000,  
+   1px -1px 0 #000,
+   -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+
+.MuiButton-root.startButton {
+  padding: 10px 10px 10px 10px;
+  color: rgb(234, 238, 255);
+  border: 1px rgb(234, 238, 255) solid;
+  background-image: linear-gradient(144deg, #28dd1e, #31da5b 50%, #52d22b);
+  transition: transform .2s;
+  margin-top: 25px;
+}
+
+.MuiButton-root.startButton:hover {
+  transform: scale(1.1);
+  color: rgb(234, 238, 255);
+  border: 1px rgb(234, 238, 255) solid;
+  background-image: linear-gradient(144deg, #28dd1e, #31da5b 50%, #52d22b);
+}
+
+.controller {
+  margin-top: 10px;
+}
+
+.setting {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3%;
+  font-size:20px;
+  text-shadow:
+  -1px -1px 0 #000,  
+   1px -1px 0 #000,
+   -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+
+.settingTitle {
+  margin-bottom: 1%;
+}
+
+.cloud{
+  position:absolute;
+  z-index:0;
+  transition: transform 1s cubic-bezier(.96,-1.07,.48,.85);	
+  overflow-block: hidden;
+}
+.heartDiv{
+  position:absolute;
+  top: 0;
+  left: 0;
+}
+.heart{
+  height: 20px;
+  padding: 22px 5px 0px 15px;
+}

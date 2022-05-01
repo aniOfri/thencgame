@@ -1,0 +1,732 @@
+[
+    {
+        "countryLabel": "Romania",
+        "gps": "Point(25.0 46.0)",
+        "population": "19586539"
+    },
+    {
+        "countryLabel": "Kenya",
+        "gps": "Point(38.0 0.1)",
+        "population": "48468138"
+    },
+    {
+        "countryLabel": "Algeria",
+        "gps": "Point(1.0 28.0)",
+        "population": "41318142"
+    },
+    {
+        "countryLabel": "Papua New Guinea",
+        "gps": "Point(147.0 -6.3)",
+        "population": "8935000"
+    },
+    {
+        "countryLabel": "Honduras",
+        "gps": "Point(-86.816667 14.633333)",
+        "population": "9265067"
+    },
+    {
+        "countryLabel": "Poland",
+        "gps": "Point(19.0 52.0)",
+        "population": "38382576"
+    },
+    {
+        "countryLabel": "Albania",
+        "gps": "Point(20.0 41.0)",
+        "population": "3020209"
+    },
+    {
+        "countryLabel": "Australia",
+        "gps": "Point(137.0 -28.0)",
+        "population": "24511800"
+    },
+    {
+        "countryLabel": "Denmark",
+        "gps": "Point(10.0 56.0)",
+        "population": "5827463"
+    },
+    {
+        "countryLabel": "Finland",
+        "gps": "Point(27.0 65.0)",
+        "population": "5516224"
+    },
+    {
+        "countryLabel": "Japan",
+        "gps": "Point(136.0 35.0)",
+        "population": "125961625"
+    },
+    {
+        "countryLabel": "United States of America",
+        "gps": "Point(-98.5795 39.828175)",
+        "population": "331449281"
+    },
+    {
+        "countryLabel": "Canada",
+        "gps": "Point(-109.0 56.0)",
+        "population": "37894799"
+    },
+    {
+        "countryLabel": "Lithuania",
+        "gps": "Point(24.0 55.2)",
+        "population": "2790842"
+    },
+    {
+        "countryLabel": "Republic of Ireland",
+        "gps": "Point(-8.0 53.0)",
+        "population": "4761865"
+    },
+    {
+        "countryLabel": "Guatemala",
+        "gps": "Point(-90.25 15.5)",
+        "population": "17263239"
+    },
+    {
+        "countryLabel": "Latvia",
+        "gps": "Point(25.0 57.0)",
+        "population": "1909000"
+    },
+    {
+        "countryLabel": "Cuba",
+        "gps": "Point(-79.5 22.0)",
+        "population": "11181595"
+    },
+    {
+        "countryLabel": "Switzerland",
+        "gps": "Point(8.231973 46.798562)",
+        "population": "8466017"
+    },
+    {
+        "countryLabel": "Austria",
+        "gps": "Point(14.0 48.0)",
+        "population": "8979894"
+    },
+    {
+        "countryLabel": "Brazil",
+        "gps": "Point(-53.0 -14.0)",
+        "population": "213317639"
+    },
+    {
+        "countryLabel": "Italy",
+        "gps": "Point(12.5 42.5)",
+        "population": "60317000"
+    },
+    {
+        "countryLabel": "Iran",
+        "gps": "Point(53.0 32.0)",
+        "population": "79966230"
+    },
+    {
+        "countryLabel": "Slovakia",
+        "gps": "Point(20.0 49.0)",
+        "population": "5449270"
+    },
+    {
+        "countryLabel": "France",
+        "gps": "Point(2.0 47.0)",
+        "population": "67063703"
+    },
+    {
+        "countryLabel": "Iraq",
+        "gps": "Point(43.0 33.0)",
+        "population": "38274618"
+    },
+    {
+        "countryLabel": "Hungary",
+        "gps": "Point(19.0 47.0)",
+        "population": "9769526"
+    },
+    {
+        "countryLabel": "Germany",
+        "gps": "Point(10.0 51.0)",
+        "population": "83149300"
+    },
+    {
+        "countryLabel": "Bahrain",
+        "gps": "Point(50.551111 26.0675)",
+        "population": "1492584"
+    },
+    {
+        "countryLabel": "Cyprus",
+        "gps": "Point(33.0 35.0)",
+        "population": "1141166"
+    },
+    {
+        "countryLabel": "Chad",
+        "gps": "Point(19.4 15.466667)",
+        "population": "15477751"
+    },
+    {
+        "countryLabel": "Portugal",
+        "gps": "Point(-9.183333333 38.7)",
+        "population": "10347892"
+    },
+    {
+        "countryLabel": "People's Republic of China",
+        "gps": "Point(103.451944444 35.844722222)",
+        "population": "1443497378"
+    },
+    {
+        "countryLabel": "Mongolia",
+        "gps": "Point(104.0 47.0)",
+        "population": "3075647"
+    },
+    {
+        "countryLabel": "Ethiopia",
+        "gps": "Point(40.0 9.0)",
+        "population": "104957438"
+    },
+    {
+        "countryLabel": "Paraguay",
+        "gps": "Point(-58.0 -23.5)",
+        "population": "6811297"
+    },
+    {
+        "countryLabel": "India",
+        "gps": "Point(83.0 22.8)",
+        "population": "1326093247"
+    },
+    {
+        "countryLabel": "East Timor",
+        "gps": "Point(125.75 -8.966667)",
+        "population": "1296311"
+    },
+    {
+        "countryLabel": "Costa Rica",
+        "gps": "Point(-84.0 10.0)",
+        "population": "4905769"
+    },
+    {
+        "countryLabel": "Costa Rica",
+        "gps": "Point(-84.0 10.0)",
+        "population": "5213362"
+    },
+    {
+        "countryLabel": "Peru",
+        "gps": "Point(-76.0 -9.4)",
+        "population": "29381884"
+    },
+    {
+        "countryLabel": "Bulgaria",
+        "gps": "Point(25.5 42.75)",
+        "population": "7000039"
+    },
+    {
+        "countryLabel": "Argentina",
+        "gps": "Point(-64.0 -34.0)",
+        "population": "44938712"
+    },
+    {
+        "countryLabel": "Estonia",
+        "gps": "Point(26.0 59.0)",
+        "population": "1324820"
+    },
+    {
+        "countryLabel": "El Salvador",
+        "gps": "Point(-88.866111 13.668889)",
+        "population": "6420746"
+    },
+    {
+        "countryLabel": "Colombia",
+        "gps": "Point(-73.25 4.0)",
+        "population": "49065615"
+    },
+    {
+        "countryLabel": "Kazakhstan",
+        "gps": "Point(68.0 48.0)",
+        "population": "18276500"
+    },
+    {
+        "countryLabel": "Norway",
+        "gps": "Point(11.0 65.0)",
+        "population": "5425270"
+    },
+    {
+        "countryLabel": "United Kingdom",
+        "gps": "Point(-2.0 54.6)",
+        "population": "66022273"
+    },
+    {
+        "countryLabel": "Singapore",
+        "gps": "Point(103.8 1.3)",
+        "population": "5866139"
+    },
+    {
+        "countryLabel": "Jamaica",
+        "gps": "Point(-77.4 18.18)",
+        "population": "2890299"
+    },
+    {
+        "countryLabel": "Slovenia",
+        "gps": "Point(15.0 46.0)",
+        "population": "2066880"
+    },
+    {
+        "countryLabel": "Bolivia",
+        "gps": "Point(-64.991228611 -17.056869611)",
+        "population": "11051600"
+    },
+    {
+        "countryLabel": "Indonesia",
+        "gps": "Point(118.0 -2.0)",
+        "population": "270625568"
+    },
+    {
+        "countryLabel": "Netherlands",
+        "gps": "Point(5.55 52.316666666)",
+        "population": "17282163"
+    },
+    {
+        "countryLabel": "Uzbekistan",
+        "gps": "Point(66.0 41.0)",
+        "population": "33570609"
+    },
+    {
+        "countryLabel": "New Zealand",
+        "gps": "Point(174.0 -41.2)",
+        "population": "5112300"
+    },
+    {
+        "countryLabel": "Chile",
+        "gps": "Point(-71.0 -33.0)",
+        "population": "18054726"
+    },
+    {
+        "countryLabel": "Sweden",
+        "gps": "Point(15.0 61.0)",
+        "population": "10409248"
+    },
+    {
+        "countryLabel": "North Korea",
+        "gps": "Point(127.0 40.0)",
+        "population": "25490965"
+    },
+    {
+        "countryLabel": "Trinidad and Tobago",
+        "gps": "Point(-61.516666666 10.666666666)",
+        "population": "1369125"
+    },
+    {
+        "countryLabel": "Greece",
+        "gps": "Point(23.0 38.5)",
+        "population": "10760421"
+    },
+    {
+        "countryLabel": "South Africa",
+        "gps": "Point(24.0 -29.0)",
+        "population": "59622350"
+    },
+    {
+        "countryLabel": "Turkey",
+        "gps": "Point(36.0 39.0)",
+        "population": "83614362"
+    },
+    {
+        "countryLabel": "Haiti",
+        "gps": "Point(-72.8 19.0)",
+        "population": "10981229"
+    },
+    {
+        "countryLabel": "Dominican Republic",
+        "gps": "Point(-70.2 18.8)",
+        "population": "10403761"
+    },
+    {
+        "countryLabel": "Croatia",
+        "gps": "Point(15.466667 45.25)",
+        "population": "4105493"
+    },
+    {
+        "countryLabel": "Venezuela",
+        "gps": "Point(-67.0 8.0)",
+        "population": "28515829"
+    },
+    {
+        "countryLabel": "Wales",
+        "gps": "Point(-3.633333333 52.35)",
+        "population": "3113000"
+    },
+    {
+        "countryLabel": "Belarus",
+        "gps": "Point(28.046666666 53.528333333)",
+        "population": "9255524"
+    },
+    {
+        "countryLabel": "Ecuador",
+        "gps": "Point(-78.0 -1.0)",
+        "population": "16624858"
+    },
+    {
+        "countryLabel": "Cambodia",
+        "gps": "Point(105.0 12.6)",
+        "population": "16005373"
+    },
+    {
+        "countryLabel": "Ghana",
+        "gps": "Point(-0.5 8.0)",
+        "population": "26908262"
+    },
+    {
+        "countryLabel": "Uruguay",
+        "gps": "Point(-56.0 -33.0)",
+        "population": "3456750"
+    },
+    {
+        "countryLabel": "Egypt",
+        "gps": "Point(29.0 27.0)",
+        "population": "94798827"
+    },
+    {
+        "countryLabel": "Israel",
+        "gps": "Point(35.0 31.0)",
+        "population": "9187000"
+    },
+    {
+        "countryLabel": "Mexico",
+        "gps": "Point(-102.0 23.0)",
+        "population": "124777324"
+    },
+    {
+        "countryLabel": "Czech Republic",
+        "gps": "Point(16.0 49.5)",
+        "population": "10701777"
+    },
+    {
+        "countryLabel": "Vietnam",
+        "gps": "Point(108.0 16.0)",
+        "population": "94660000"
+    },
+    {
+        "countryLabel": "Taiwan",
+        "gps": "Point(121.0 24.0)",
+        "population": "23593794"
+    },
+    {
+        "countryLabel": "Kosovo",
+        "gps": "Point(20.833333333 42.55)",
+        "population": "1883018"
+    },
+    {
+        "countryLabel": "Kingdom of Denmark",
+        "gps": "Point(-6.844444444 61.97)",
+        "population": "5930987"
+    },
+    {
+        "countryLabel": "Namibia",
+        "gps": "Point(17.0 -23.0)",
+        "population": "2533794"
+    },
+    {
+        "countryLabel": "Catalonia",
+        "gps": "Point(1.47 41.81)",
+        "population": "7727029"
+    },
+    {
+        "countryLabel": "Philippines",
+        "gps": "Point(123.0 12.0)",
+        "population": "109035343"
+    },
+    {
+        "countryLabel": "Sudan",
+        "gps": "Point(32.0 15.0)",
+        "population": "40533330"
+    },
+    {
+        "countryLabel": "Nepal",
+        "gps": "Point(84.0 28.0)",
+        "population": "30327877"
+    },
+    {
+        "countryLabel": "Tunisia",
+        "gps": "Point(10.0 34.0)",
+        "population": "11565204"
+    },
+    {
+        "countryLabel": "Zambia",
+        "gps": "Point(28.0 -14.0)",
+        "population": "17094130"
+    },
+    {
+        "countryLabel": "Togo",
+        "gps": "Point(1.183333 8.25)",
+        "population": "7797694"
+    },
+    {
+        "countryLabel": "South Korea",
+        "gps": "Point(128.0 36.0)",
+        "population": "51466201"
+    },
+    {
+        "countryLabel": "Zimbabwe",
+        "gps": "Point(30.0 -19.0)",
+        "population": "16529904"
+    },
+    {
+        "countryLabel": "Oman",
+        "gps": "Point(57.0 21.0)",
+        "population": "4829480"
+    },
+    {
+        "countryLabel": "Rwanda",
+        "gps": "Point(29.873888888 -1.940277777)",
+        "population": "12208407"
+    },
+    {
+        "countryLabel": "Jordan",
+        "gps": "Point(36.5 31.2)",
+        "population": "10428241"
+    },
+    {
+        "countryLabel": "Kyrgyzstan",
+        "gps": "Point(75.0 41.0)",
+        "population": "6201500"
+    },
+    {
+        "countryLabel": "Myanmar",
+        "gps": "Point(96.0 22.0)",
+        "population": "53370609"
+    },
+    {
+        "countryLabel": "Guinea-Bissau",
+        "gps": "Point(-15.0 12.0)",
+        "population": "1861283"
+    },
+    {
+        "countryLabel": "Botswana",
+        "gps": "Point(23.7 -22.2)",
+        "population": "2291661"
+    },
+    {
+        "countryLabel": "Nigeria",
+        "gps": "Point(8.0 9.0)",
+        "population": "211400708"
+    },
+    {
+        "countryLabel": "Kingdom of Denmark",
+        "gps": "Point(10.0 56.0)",
+        "population": "5930987"
+    },
+    {
+        "countryLabel": "Saudi Arabia",
+        "gps": "Point(44.116667 23.716667)",
+        "population": "33000000"
+    },
+    {
+        "countryLabel": "Morocco",
+        "gps": "Point(-6.0 32.0)",
+        "population": "36029138"
+    },
+    {
+        "countryLabel": "Lebanon",
+        "gps": "Point(35.766667 33.833333)",
+        "population": "6100075"
+    },
+    {
+        "countryLabel": "The Gambia",
+        "gps": "Point(-15.5 13.5)",
+        "population": "2100568"
+    },
+    {
+        "countryLabel": "Mozambique",
+        "gps": "Point(35.0 -19.0)",
+        "population": "29668834"
+    },
+    {
+        "countryLabel": "Somalia",
+        "gps": "Point(47.0 6.0)",
+        "population": "11031386"
+    },
+    {
+        "countryLabel": "Benin",
+        "gps": "Point(2.183333333 8.833333333)",
+        "population": "11175692"
+    },
+    {
+        "countryLabel": "Syria",
+        "gps": "Point(38.583333 35.216667)",
+        "population": "18499181"
+    },
+    {
+        "countryLabel": "Tajikistan",
+        "gps": "Point(71.366667 38.583333)",
+        "population": "8921343"
+    },
+    {
+        "countryLabel": "Angola",
+        "gps": "Point(17.35 -12.35)",
+        "population": "29784193"
+    },
+    {
+        "countryLabel": "Turkmenistan",
+        "gps": "Point(60.0 39.0)",
+        "population": "5850901"
+    },
+    {
+        "countryLabel": "Madagascar",
+        "gps": "Point(47.0 -20.0)",
+        "population": "25570895"
+    },
+    {
+        "countryLabel": "Nicaragua",
+        "gps": "Point(-85.0 13.0)",
+        "population": "6217581"
+    },
+    {
+        "countryLabel": "Burundi",
+        "gps": "Point(29.816667 -3.666667)",
+        "population": "11530580"
+    },
+    {
+        "countryLabel": "United Arab Emirates",
+        "gps": "Point(54.3 24.4)",
+        "population": "9890400"
+    },
+    {
+        "countryLabel": "Thailand",
+        "gps": "Point(101.0 14.0)",
+        "population": "65931550"
+    },
+    {
+        "countryLabel": "Senegal",
+        "gps": "Point(-14.283333 14.366667)",
+        "population": "15850567"
+    },
+    {
+        "countryLabel": "Eritrea",
+        "gps": "Point(38.25 15.483333)",
+        "population": "3497000"
+    },
+    {
+        "countryLabel": "Lesotho",
+        "gps": "Point(28.25 -29.55)",
+        "population": "2233339"
+    },
+    {
+        "countryLabel": "South Sudan",
+        "gps": "Point(30.0 7.0)",
+        "population": "12575714"
+    },
+    {
+        "countryLabel": "Mauritania",
+        "gps": "Point(-11.0 21.0)",
+        "population": "4420184"
+    },
+    {
+        "countryLabel": "Uganda",
+        "gps": "Point(32.39 1.28)",
+        "population": "42862958"
+    },
+    {
+        "countryLabel": "Somaliland",
+        "gps": "Point(46.2 9.8)",
+        "population": "5780000"
+    },
+    {
+        "countryLabel": "Democratic Republic of the Congo",
+        "gps": "Point(23.656 -2.88)",
+        "population": "86790567"
+    },
+    {
+        "countryLabel": "Libya",
+        "gps": "Point(17.0 27.0)",
+        "population": "6678567"
+    },
+    {
+        "countryLabel": "Liberia",
+        "gps": "Point(-9.75 6.533333)",
+        "population": "5214030"
+    },
+    {
+        "countryLabel": "Sierra Leone",
+        "gps": "Point(-12.1 8.5)",
+        "population": "7557212"
+    },
+    {
+        "countryLabel": "Malawi",
+        "gps": "Point(34.0 -13.0)",
+        "population": "18622104"
+    },
+    {
+        "countryLabel": "Galicia",
+        "gps": "Point(-7.866111111 42.755)",
+        "population": "2708339"
+    },
+    {
+        "countryLabel": "Sri Lanka",
+        "gps": "Point(81.0 7.0)",
+        "population": "21444000"
+    },
+    {
+        "countryLabel": "Tanzania",
+        "gps": "Point(34.854 -6.307)",
+        "population": "57310019"
+    },
+    {
+        "countryLabel": "Afghanistan",
+        "gps": "Point(66.0 33.0)",
+        "population": "37466414"
+    },
+    {
+        "countryLabel": "Guinea",
+        "gps": "Point(-11.0 10.0)",
+        "population": "12717176"
+    },
+    {
+        "countryLabel": "Burkina Faso",
+        "gps": "Point(-2.066667 12.266667)",
+        "population": "20488000"
+    },
+    {
+        "countryLabel": "Mali",
+        "gps": "Point(-4.0 17.0)",
+        "population": "18541980"
+    },
+    {
+        "countryLabel": "Qatar",
+        "gps": "Point(51.212767 25.269535)",
+        "population": "2639211"
+    },
+    {
+        "countryLabel": "Niger",
+        "gps": "Point(10.0 17.0)",
+        "population": "21477348"
+    },
+    {
+        "countryLabel": "Cameroon",
+        "gps": "Point(12.0 7.0)",
+        "population": "24053727"
+    },
+    {
+        "countryLabel": "Pakistan",
+        "gps": "Point(71.0 30.0)",
+        "population": "216565318"
+    },
+    {
+        "countryLabel": "Republic of the Congo",
+        "gps": "Point(15.383330555 -0.75)",
+        "population": "5260750"
+    },
+    {
+        "countryLabel": "Central African Republic",
+        "gps": "Point(20.9 6.7)",
+        "population": "4659080"
+    },
+    {
+        "countryLabel": "Yemen",
+        "gps": "Point(48.0 15.5)",
+        "population": "28250420"
+    },
+    {
+        "countryLabel": "Laos",
+        "gps": "Point(104.1 18.2)",
+        "population": "6858160"
+    },
+    {
+        "countryLabel": "Malaysia",
+        "gps": "Point(102.314361666 3.7805111)",
+        "population": "32447385"
+    },
+    {
+        "countryLabel": "Bangladesh",
+        "gps": "Point(89.866667 24.016667)",
+        "population": "165775000"
+    }
+]
