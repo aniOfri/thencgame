@@ -4,7 +4,8 @@ import './App.css'
 // Components
 import Menu from './components/menu';
 import Game from './components/game';
-import Cloud from './components/cloud';
+import FallingObject from './components/fallingobject'
+//import Cloud from './components/cloud';
 
 // Data
 import backgroundImage from './data/worldmap.png';
@@ -153,7 +154,8 @@ function App() {
 
   return (
     <div className="App">
-        <img className="backgroundImg" src={backgroundImage}/>
+        {/*<img className="backgroundImg" src={backgroundImage}/>*/}
+        <FallingObject width={width}/>
         <div className="text">
           {jsx}
         </div>
