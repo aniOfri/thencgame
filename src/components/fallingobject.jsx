@@ -1,50 +1,60 @@
 import {useState, useEffect} from 'react';
 import {RandInt} from '../modules/Calculators';
-import {countries} from '../data/ISO3166-1.js';
 
 
-class Flag{
-    constructor(width) {
-        this.posX = RandInt(width*0.9);
+class Globe{
+    constructor(index, width, height) {
+        this.index = index;
+        this.posX = RandInt(width*0.7)+width*0.1;
+        this.offsetX = 0;
         this.posY = -50-RandInt(150);
-        this.maxLifeSpan = RandInt(600)+200;
+        this.maxLifeSpan = RandInt(height)+200;
         this.lifeSpan = 0;
         this.randomSize = 1+Math.random();
-        this.speed = RandInt(5)+1;
-        this.country = countries[RandInt(countries.length)].toLowerCase()
+        this.speed = RandInt(3)+1;
+
+        let globes = ["🌍", "🌎", "🌏"];
+        this.globe = globes[RandInt(3)];
       }
 
-      move(width){
+      move(width, height){
         if (this.lifeSpan < this.maxLifeSpan){
             this.posY += this.speed
             this.lifeSpan += this.speed
+            
+            if (this.offsetX == 0)
+            this.offsetX = 50;
+        else if (this.offsetX == 50)
+            this.offsetX = 0;
         }
         else{
-            this.posX = RandInt(width*0.9);
+            this.posX = RandInt(width*0.7)+width*0.1;
             this.posY = -50-RandInt(150);
-            this.maxLifeSpan = RandInt(600)+200;
+            this.maxLifeSpan = RandInt(height)+200;
             this.lifeSpan = 0;
             this.randomSize = 1+Math.random();
-            this.speed = RandInt(5)+1;
-            this.country = countries[RandInt(countries.length)].toLowerCase();
+            this.speed = RandInt(3)+1;
+            this.offsetX = 0;
+
+            
+            let globes = ["🌍", "🌎", "🌏"];
+            this.globe = globes[RandInt(3)];
         }
       }
 
-      getFlag(){
-        let url = "https://flagcdn.com/28x21/"+this.country+".png"
-        
+      getGlobe(){
         let opacity = (this.maxLifeSpan-this.lifeSpan)/this.maxLifeSpan*100+"%";
         const styles = {
             position: "absolute",
             top: this.posY,
-            left: this.posX,
+            left: this.posX+this.offsetX,
             opacity: opacity,
+            fontSize: (20*this.randomSize),
+            transition: "left 1s cubic-bezier(.96,-1.07,.48,.85)"
           };
     
         return (
-            <div style={styles}>
-                <img src={url} width={28*this.randomSize} height={21*this.randomSize}/>
-            </div>
+            <p key={this.index} style={styles}>{this.globe}</p>
         )
       }
 }
@@ -52,21 +62,23 @@ class Flag{
 function FallingObject(props){
     let objs = [];
     for (let i = 0; i < 25; i++){
-        objs.push(new Flag(props.width))
+        objs.push(new Globe(i, props.width, props.height))
     }
 
     const [objects, setObjects] = useState(objs)
-    const [foo, setFoo] = useState(true);
+    const [foo, setFoo] = useState(0);
 
     useEffect(() => {
         let interval = null;
 
         interval = setInterval(() => {
-            setFoo(!foo)
+            setFoo(foo+1);
             let temp = objects;
+
             for (let i = 0; i < 25; i++){
-                temp[i].move(props.width);
+                temp[i].move(props.width, props.height);
             }
+
             setObjects(temp);
         }, 10); 
 
@@ -77,7 +89,7 @@ function FallingObject(props){
 
     let flags = [];
     for (let i = 0; i < 25; i++){
-        flags.push(objects[i].getFlag())
+        flags.push(objects[i].getGlobe())
     }
 
     return (

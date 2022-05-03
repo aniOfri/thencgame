@@ -3,7 +3,7 @@ body {
 }
 .App {
   cursor: default;
-  background: linear-gradient(90deg, rgb(184, 217, 239) 0%, rgb(190, 214, 240) 100%);
+  background: linear-gradient(90deg, rgb(16, 43, 61) 0%, rgb(24, 40, 58) 100%);
   background-size:cover;
   background-position-x:center;
   min-height: 100vh;
@@ -41,7 +41,7 @@ div.text{
 
 .title {
   font-size: 8vmin;
-  margin-top: 5vmax;
+  margin-top: 6vmax;
   margin-bottom: 0;
   text-shadow:
   -1px -1px 0 #000,  
@@ -151,8 +151,8 @@ h1 {
 }
 
 .h1button h1{
-  background-color: #31da5b;
-  box-shadow: 5px 5px #40aa5a;
+  background-color: #596688;
+  box-shadow: 5px 5px #4c5670;
   color: rgb(234, 238, 255); 
   border-radius: 25px;
   padding: 5px 15px 12px 15px;

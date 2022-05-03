@@ -155,7 +155,7 @@ function App() {
   return (
     <div className="App">
         {/*<img className="backgroundImg" src={backgroundImage}/>*/}
-        <FallingObject width={width}/>
+        <FallingObject width={width} height={height}/>
         <div className="text">
           {jsx}
         </div>
