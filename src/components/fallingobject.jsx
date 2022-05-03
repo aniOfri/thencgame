@@ -22,10 +22,7 @@ class Globe{
             this.posY += this.speed
             this.lifeSpan += this.speed
             
-            if (this.offsetX == 0)
-            this.offsetX = 50;
-        else if (this.offsetX == 50)
-            this.offsetX = 0;
+
         }
         else{
             this.posX = RandInt(width*0.7)+width*0.1;
@@ -47,10 +44,9 @@ class Globe{
         const styles = {
             position: "absolute",
             top: this.posY,
-            left: this.posX+this.offsetX,
+            left: this.posX,
             opacity: opacity,
-            fontSize: (20*this.randomSize),
-            transition: "left 1s cubic-bezier(.96,-1.07,.48,.85)"
+            fontSize: (20*this.randomSize)
           };
     
         return (
@@ -66,19 +62,19 @@ function FallingObject(props){
     }
 
     const [objects, setObjects] = useState(objs)
-    const [foo, setFoo] = useState(0);
+    const [foo, setFoo] = useState(false);
 
     useEffect(() => {
         let interval = null;
 
         interval = setInterval(() => {
-            setFoo(foo+1);
             let temp = objects;
 
             for (let i = 0; i < 25; i++){
                 temp[i].move(props.width, props.height);
             }
 
+            setFoo(!foo);
             setObjects(temp);
         }, 10); 
 

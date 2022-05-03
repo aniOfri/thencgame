@@ -242,7 +242,10 @@ function Game(props) {
         thirdClass += " h1button";
 
         jsx = (<div>
-            <p className="streak">Score: {streak}</p>
+            <div className="streak">
+                <p>Highscore: {parseInt(props.cookies["Highscore"])}</p>
+                <p>Score: {streak}</p>
+            </div>
             {timerHTML(props.timerEnabled || props.isMultiplayer, time)}
             <h1 className="titleCountry">Which Country is Nearest to:<br></br> {settlements[0][0].countryLabel}</h1>
             <div className={wrapper}>
