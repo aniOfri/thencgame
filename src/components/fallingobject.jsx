@@ -3,67 +3,86 @@ import {RandInt} from '../modules/Calculators';
 import {countries} from '../data/ISO3166-1.js';
 
 
-function Object(props){
-    var line = countries[RandInt(countries.length)];
-    let url = "https://flagcdn.com/16x12/"+line.toLowerCase()+".png"
+class Flag{
+    constructor(width) {
+        this.posX = RandInt(width*0.9);
+        this.posY = -50-RandInt(150);
+        this.maxLifeSpan = RandInt(600)+200;
+        this.lifeSpan = 0;
+        this.randomSize = 1+Math.random();
+        this.speed = RandInt(5)+1;
+        this.country = countries[RandInt(countries.length)].toLowerCase()
+      }
 
-    const [posX, setPosX] = useState(RandInt(props.width*0.9));
-    const [posY, setPosY] = useState(-50);
-    const [object, setObject] = useState(<img src={url} width="20"/>)
-    const [lifeSpan, setLifeSpan] = useState(props.lifeSpan)
-
-    useEffect(() => {
-        let interval = null;
-    
-        if (lifeSpan > 0){
-            interval = setInterval(() => {
-                setPosY(posY + props.speed);
-                setLifeSpan(lifeSpan - props.speed);
-            }, 10);
+      move(width){
+        if (this.lifeSpan < this.maxLifeSpan){
+            this.posY += this.speed
+            this.lifeSpan += this.speed
         }
         else{
-            setPosX(RandInt(props.width*0.9))
-            setPosY(-50);
-            setLifeSpan(props.lifeSpan)
-            clearInterval(interval);
-            
-            line = countries[RandInt(countries.length)];
-            url = "https://flagcdn.com/16x12/"+line.toLowerCase()+".png"
-            setObject(<img src={url} width="20"/>)
+            this.posX = RandInt(width*0.9);
+            this.posY = -50-RandInt(150);
+            this.maxLifeSpan = RandInt(600)+200;
+            this.lifeSpan = 0;
+            this.randomSize = 1+Math.random();
+            this.speed = RandInt(5)+1;
+            this.country = countries[RandInt(countries.length)].toLowerCase();
         }
+      }
 
-        return () => {
-            clearInterval(interval);
-        };
-    }, [lifeSpan]);
+      getFlag(){
+        let url = "https://flagcdn.com/28x21/"+this.country+".png"
+        
+        let opacity = (this.maxLifeSpan-this.lifeSpan)/this.maxLifeSpan*100+"%";
+        const styles = {
+            position: "absolute",
+            top: this.posY,
+            left: this.posX,
+            opacity: opacity,
+          };
     
-    let opacity = lifeSpan/props.lifeSpan*100+"%"
-    const styles = {
-        color: "white",
-        position: "absolute",
-        top: posY,
-        left: posX,
-        opacity: opacity
-      };
-
-    return (
-        <div style={styles}>
-            <span>{object}</span>
-        </div>
-    )
+        return (
+            <div style={styles}>
+                <img src={url} width={28*this.randomSize} height={21*this.randomSize}/>
+            </div>
+        )
+      }
 }
 
 function FallingObject(props){
     let objs = [];
-    for (let i = 0; i < 50; i++){
-        objs.push(<Object index={i} width={props.width} lifeSpan={RandInt(800)} speed={RandInt(7)+3}/>)
+    for (let i = 0; i < 25; i++){
+        objs.push(new Flag(props.width))
     }
-    const [objects, setObjects] = useState(objs)
 
+    const [objects, setObjects] = useState(objs)
+    const [foo, setFoo] = useState(true);
+
+    useEffect(() => {
+        let interval = null;
+
+        interval = setInterval(() => {
+            setFoo(!foo)
+            let temp = objects;
+            for (let i = 0; i < 25; i++){
+                temp[i].move(props.width);
+            }
+            setObjects(temp);
+        }, 10); 
+
+        return () => {
+            clearInterval(interval);
+        };
+    }, [foo]);
+
+    let flags = [];
+    for (let i = 0; i < 25; i++){
+        flags.push(objects[i].getFlag())
+    }
 
     return (
         <div>
-            {objects}
+            {flags}
         </div>
     );
  }

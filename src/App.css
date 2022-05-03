@@ -3,7 +3,7 @@ body {
 }
 .App {
   cursor: default;
-  background: linear-gradient(90deg, hsla(205, 45%, 37%, 1) 0%, hsla(212, 27%, 51%, 1) 100%);
+  background: linear-gradient(90deg, rgb(184, 217, 239) 0%, rgb(190, 214, 240) 100%);
   background-size:cover;
   background-position-x:center;
   min-height: 100vh;
