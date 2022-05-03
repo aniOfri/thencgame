@@ -10,7 +10,7 @@ body {
   display: flex;
   height: auto;
   flex-direction: column;
-  font-size: calc(5px + 2vmin);
+  font-size: 3vmin;
   color: rgb(234, 238, 255);  
   z-index: -2;
 }
@@ -54,15 +54,18 @@ div.text{
   position: absolute;
   right: 0;
   top: 0;
-  font-size: 5vmin;
-  padding: 12vmax 30px 0px 0px;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  padding: 12px 30px 0px 0px;
   text-shadow:
   -1px -1px 0 #000,  
    1px -1px 0 #000,
    -1px 1px 0 #000,
     1px 1px 0 #000;
+}
+
+.streak p{
+  font-size: 3vmin;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .titleCountry{

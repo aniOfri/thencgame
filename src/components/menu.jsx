@@ -85,48 +85,17 @@ function Menu(props) {
         return <Settings isHealth={props.isHealth} setIsHealth={props.setIsHealth} setShowInfo={props.setShowInfo} showInfo={props.showInfo} setMinPop={props.setMinPop} minPop={props.minPop} setTimerEnabled={props.setTimerEnabled} timerEnabled={props.timerEnabled} setSettings={setSettings} settings={settings} />
     }
     else {
-        let mode = "Singleplayer";
+        let mode = "Start Playing";
         if (props.cookies["streak"] > 0)
-            mode = "Continue Singleplayer (" + props.cookies["streak"] + ")";
+            mode = "Continue Playing (" + props.cookies["streak"] + ")";
 
-        if (!props.isMultiplayer){
-            return (
-                <div>
-                    <img src={settingsLogo} className="settingsImage" onClick={() => { setSettings(!settings) }}></img>
-                    <h1 className="menuTitle">Which Country is Nearest?</h1><br></br>
-                    <div className="h1button" ><h1  onClick={() => { props.startGame() }}> {mode}</h1></div><br></br>
-                    <div className="h1button nohover" ><h1 className="smallText"> Multiplayer (Coming soon) </h1></div>{/*onClick={() => { props.startMultiplayer() }}*/}
-                </div>
-            );
-        }
-        else{
-            if (!props.waitingRoom){
-            return (
-                <div>
-                    <img src={closeLogo} className="closeImage" onClick={() => { props.setIsMultiplayer(false) }}></img>
-                    <h1 className="menuTitle ">Multiplayer</h1><br></br>
-                    Username:<br></br>
-                    <input type="text" onChange={(event) => { props.setUsername(event.target.value) }}></input><br></br>
-                    Room:<br></br>
-                    <input type="text" onChange={(event) => { props.setRoom(event.target.value) }}></input><br></br>
-                    <Button className="startButton" variant="outlined" onClick={() => { props.joinRoom() }}> Join </Button>
-                </div>
-                );
-            }
-            else{
-            let list;
-            if (props.users < 2)
-                list = "מחכים לשחקן נוסף"+props.dots;
-            
-            return (
-                <div>
-                    <h1 className="menuTitle ">Waiting Room</h1><br></br>
-                    {list}<br></br>
-                    {props.users}/2<br></br>
-                </div>
-            )
-            }
-        }
+        return (
+            <div>
+                <img src={settingsLogo} className="settingsImage" onClick={() => { setSettings(!settings) }}></img>
+                <h1 className="menuTitle">Which Country is Nearest?</h1><br></br>
+                <div className="h1button" ><h1  onClick={() => { props.startGame() }}> {mode}</h1></div><br></br>
+            </div>
+        );
 
     }
 }

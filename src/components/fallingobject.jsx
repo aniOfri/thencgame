@@ -5,7 +5,7 @@ import {RandInt} from '../modules/Calculators';
 class Globe{
     constructor(index, width, height) {
         this.index = index;
-        this.posX = RandInt(width*0.7)+width*0.1;
+        this.posX = RandInt(width*0.8)+width*0.1;
         this.offsetX = 0;
         this.posY = -50-RandInt(150);
         this.maxLifeSpan = RandInt(height)+200;
@@ -25,7 +25,7 @@ class Globe{
 
         }
         else{
-            this.posX = RandInt(width*0.7)+width*0.1;
+            this.posX = RandInt(width*0.8)+width*0.1;
             this.posY = -50-RandInt(150);
             this.maxLifeSpan = RandInt(height)+200;
             this.lifeSpan = 0;
@@ -57,7 +57,7 @@ class Globe{
 
 function FallingObject(props){
     let objs = [];
-    for (let i = 0; i < 25; i++){
+    for (let i = 0; i < 40; i++){
         objs.push(new Globe(i, props.width, props.height))
     }
 
@@ -70,7 +70,7 @@ function FallingObject(props){
         interval = setInterval(() => {
             let temp = objects;
 
-            for (let i = 0; i < 25; i++){
+            for (let i = 0; i < 40; i++){
                 temp[i].move(props.width, props.height);
             }
 
@@ -84,7 +84,7 @@ function FallingObject(props){
     }, [foo]);
 
     let flags = [];
-    for (let i = 0; i < 25; i++){
+    for (let i = 0; i < 40; i++){
         flags.push(objects[i].getGlobe())
     }
 
