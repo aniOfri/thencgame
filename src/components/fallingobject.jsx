@@ -6,7 +6,6 @@ class Globe{
     constructor(index, width, height) {
         this.index = index;
         this.posX = RandInt(width*0.8)+width*0.1;
-        this.offsetX = 0;
         this.posY = -50-RandInt(150);
         this.maxLifeSpan = RandInt(height)+200;
         this.lifeSpan = 0;
@@ -21,8 +20,6 @@ class Globe{
         if (this.lifeSpan < this.maxLifeSpan){
             this.posY += this.speed
             this.lifeSpan += this.speed
-            
-
         }
         else{
             this.posX = RandInt(width*0.8)+width*0.1;
@@ -31,7 +28,6 @@ class Globe{
             this.lifeSpan = 0;
             this.randomSize = 1+Math.random();
             this.speed = RandInt(3)+1;
-            this.offsetX = 0;
 
             
             let globes = ["🌍", "🌎", "🌏"];
@@ -73,9 +69,9 @@ function FallingObject(props){
             for (let i = 0; i < 40; i++){
                 temp[i].move(props.width, props.height);
             }
-
-            setFoo(!foo);
+            
             setObjects(temp);
+            setFoo(!foo);
         }, 10); 
 
         return () => {

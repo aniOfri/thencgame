@@ -1,5 +1,4 @@
 // Components
-import Button from '@mui/material/Button';
 import Slider from '@mui/material/Slider';
 import Switch from 'react-switch/dist/react-switch.dev.js'
 
