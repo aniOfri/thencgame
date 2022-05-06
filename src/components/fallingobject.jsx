@@ -52,25 +52,45 @@ class Globe{
 }
 
 function FallingObject(props){
-    let objs = [];
-    for (let i = 0; i < 40; i++){
-        objs.push(new Globe(i, props.width, props.height))
+
+
+    const [objects, setObjects] = useState(createObjects())
+    const [foo, setFoo] = useState(false);
+
+
+    function createObjects(){
+        let objs = [];
+        for (let i = 0; i < 40; i++){
+            objs.push(new Globe(i, props.width, props.height))
+        }
+        
+        return objs;
     }
 
-    const [objects, setObjects] = useState(objs)
-    const [foo, setFoo] = useState(false);
+    function handleSizeChange(){
+        for (let i = 0; i < 40; i++){
+            objects[i].posX = 0
+            objects[i].lifeSpan = objects[i].maxLifeSpan - 1;
+        }
+    }
+    
+    useEffect(() => {
+        window.addEventListener('resize', handleSizeChange);
+        window.addEventListener('orientationchange', handleSizeChange);
+        return () => {
+            window.removeEventListener('resize', handleSizeChange);
+            window.removeEventListener('orientationchange', handleSizeChange);
+        }
+    }, []);
 
     useEffect(() => {
         let interval = null;
 
         interval = setInterval(() => {
-            let temp = objects;
-
             for (let i = 0; i < 40; i++){
-                temp[i].move(props.width, props.height);
+                objects[i].move(props.width, props.height);
             }
             
-            setObjects(temp);
             setFoo(!foo);
         }, 10); 
 
