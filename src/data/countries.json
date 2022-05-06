@@ -395,11 +395,6 @@
         "population": "2533794"
     },
     {
-        "countryLabel": "Catalonia",
-        "gps": "Point(1.47 41.81)",
-        "population": "7727029"
-    },
-    {
         "countryLabel": "Philippines",
         "gps": "Point(123.0 12.0)",
         "population": "109035343"
@@ -608,11 +603,6 @@
         "countryLabel": "Malawi",
         "gps": "Point(34.0 -13.0)",
         "population": "18622104"
-    },
-    {
-        "countryLabel": "Galicia",
-        "gps": "Point(-7.866111111 42.755)",
-        "population": "2708339"
     },
     {
         "countryLabel": "Sri Lanka",
